@@ -48,8 +48,14 @@ async function curatedPhotos() {
 
 // Syntax of searchPhotos() is exact copy of curatedPhotos() except the fetch URL
 async function searchPhotos(query) {
+    clear()
     const data = fetchAPI(`https://api.pexels.com/v1/search?query=${query}+query&per_page=15&page=1`)
     generatePictures(data)
+}
+
+function clear() {
+    gallery.innerHTML = ""
+    searchInput.value = ""
 }
 
 curatedPhotos()
