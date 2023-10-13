@@ -36,14 +36,14 @@ header h2 {
     padding: .5rem;
     width: 100%;
     border: none;
-    border: 2px solid rgb(59, 59, 114);
+    border: 2px solid rgb(68, 68, 108);
 }
 
 .search-form button {
     border: none;
     padding: .5rem;
     font-size: 1rem;
-    background: rgb(59, 59, 114);
+    background: rgb(68, 68, 108);
     color: white;
     cursor: pointer;
 }
@@ -73,4 +73,20 @@ header h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.nav-button {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    padding: 1rem 3rem;
+    background: rgb(68, 68, 108);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
